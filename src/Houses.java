@@ -13,8 +13,11 @@ public class Houses {
 		Tortoise.setY(440);
 		Tortoise.penDown();
 		// 2. draw a house of height 100 |**|_
-		buildPointyRoof("large", Color.red);
-		buildFlatRoof("medium", Color.darkGray);
+		buildFlatRoof("medium", Color.green);
+		buildFlatRoof("medium", Color.magenta);
+		buildPointyRoof("small", Color.cyan);
+		
+		
 		// 3. extract that into a method that takes height as a parameter
 		// String size = JOptionPane.showInputDialog("What size building?\n
 		// Small Medium Large");
@@ -61,12 +64,13 @@ public class Houses {
 			sizeInt = 250;
 
 		}
+		
 		Tortoise.setPenColor(color);
 		Tortoise.move(sizeInt);
 		Tortoise.turn(45);
-		Tortoise.move(15);
+		Tortoise.move(20);
 		Tortoise.turn(90);
-		Tortoise.move(15);
+		Tortoise.move(20);
 		Tortoise.turn(45);
 		Tortoise.move(sizeInt);
 		Tortoise.setPenColor(Color.green);
